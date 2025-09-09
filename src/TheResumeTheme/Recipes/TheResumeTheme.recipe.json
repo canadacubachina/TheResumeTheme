@@ -65,6 +65,7 @@
 
         "OrchardCore.Email.Azure",
         "OrchardCore.Notifications.Email",
+        "OrchardCore.Users.2FA.Email",
         "OrchardCore.Seo",
         "OrchardCore.AuditTrail",
         "OrchardCore.HealthChecks",
