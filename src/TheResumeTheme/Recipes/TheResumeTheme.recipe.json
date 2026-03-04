@@ -70,14 +70,13 @@
         "OrchardCore.AuditTrail",
         "OrchardCore.HealthChecks",
         "OrchardCoreContrib.Diagnostics.Elm",
-        "OrchardCoreContrib.HealthChecks",
-
+        
         "OrchardCoreContrib.System",
         "OrchardCoreContrib.System.Updates",
-        // "OrchardCoreContrib.Users.Impersonation",
+       
         "OrchardCoreContrib.System.Maintenance",
 
-        // Themes
+      
         "TheResumeTheme",
         "TheAdmin",
         "SafeMode"
