@@ -70,11 +70,6 @@
         "OrchardCore.AuditTrail",
         "OrchardCore.HealthChecks",
         "OrchardCoreContrib.Diagnostics.Elm",
-        
-        "OrchardCoreContrib.System",
-        "OrchardCoreContrib.System.Updates",
-       
-        "OrchardCoreContrib.System.Maintenance",
 
       
         "TheResumeTheme",
@@ -82,7 +77,7 @@
         "SafeMode"
       ]
     },
-    //themes
+    
     {
       "name": "themes",
       "admin": "TheAdmin",
