@@ -9,17 +9,14 @@
   "categories": [ "default" ],
   "tags": [ "resume" ],
 
-  // The variables are evaluated the first time they are accessed, and reused across steps
   "variables": {
     "landingContentItemId": "[js:uuid()]"
   },
 
   "steps": [
-    //feature
     {
       "name": "feature",
       "enable": [
-        // SaaS
         "OrchardCore.HomeRoute",
         "OrchardCore.Admin",
         "OrchardCore.Diagnostics",
@@ -33,7 +30,6 @@
         "OrchardCore.Themes",
         "OrchardCore.Users",
 
-        // Content Management
         "OrchardCore.Alias",
         "OrchardCore.Autoroute",
         "OrchardCore.Body",
@@ -69,8 +65,6 @@
         "OrchardCore.Seo",
         "OrchardCore.AuditTrail",
         "OrchardCore.HealthChecks",
-        "OrchardCoreContrib.Diagnostics.Elm",
-
       
         "TheResumeTheme",
         "TheAdmin",
@@ -83,7 +77,7 @@
       "admin": "TheAdmin",
       "site": "TheResumeTheme"
     },
-    //settings
+
     {
       "name": "settings",
       "HomeRoute": {
@@ -96,11 +90,10 @@
         "Zones": [ "Content" ]
       }
     },
-    //ContentDefinition
+
     {
       "name": "ContentDefinition",
       "ContentTypes": [
-        //Page
         {
           "Name": "Page",
           "DisplayName": "Page",
@@ -157,7 +150,6 @@
             }
           ]
         },
-        //LandingPage
         {
           "Name": "LandingPage",
           "DisplayName": "Landing Page",
@@ -337,7 +329,7 @@
             }
           ]
         },
-        //Teaching
+
         {
           "Name": "Teaching",
           "DisplayName": "Teaching",
@@ -374,7 +366,7 @@
             }
           ]
         },
-        //Skill
+
         {
           "Name": "Skill",
           "DisplayName": "Skill",
@@ -403,7 +395,7 @@
             }
           ]
         },
-        //Award
+      
         {
           "Name": "Award",
           "DisplayName": "Award",
@@ -432,7 +424,7 @@
             }
           ]
         },
-        //Job
+
         {
           "Name": "Job",
           "DisplayName": "Job",
@@ -468,7 +460,7 @@
             }
           ]
         },
-        //Interest
+
         {
           "Name": "Interest",
           "DisplayName": "Interest",
@@ -497,7 +489,7 @@
             }
           ]
         },
-        //RawHtml
+
         {
           "Name": "RawHtml",
           "DisplayName": "Html",
@@ -521,7 +513,7 @@
             }
           ]
         },
-        //Blockquote
+
         {
           "Name": "Blockquote",
           "DisplayName": "Blockquote",
@@ -545,7 +537,7 @@
             }
           ]
         },
-        //Container
+
         {
           "Name": "Container",
           "DisplayName": "Container",
@@ -578,7 +570,7 @@
             }
           ]
         },
-        //Image
+
         {
           "Name": "Image",
           "DisplayName": "Image",
@@ -611,7 +603,7 @@
             }
           ]
         },
-        //Paragraph
+
         {
           "Name": "Paragraph",
           "DisplayName": "Paragraph",
@@ -637,8 +629,6 @@
         }
       ],
       "ContentParts": [
-
-        //Teaching
         {
           "Name": "Teaching",
           "Settings": {},
@@ -675,7 +665,7 @@
             }
           ]
         },
-        //Job
+
         {
           "Name": "Job",
           "Settings": {},
@@ -711,7 +701,7 @@
             }
           ]
         },
-        //FaLink
+  
         {
           "Name": "FaLink",
           "Settings": {},
@@ -738,7 +728,7 @@
             }
           ]
         },
-        //LandingPage
+
         {
           "Name": "LandingPage",
           "Settings": {},
@@ -755,7 +745,7 @@
             }
           ]
         },
-        //RawHtml
+
         {
           "Name": "RawHtml",
           "Settings": {},
@@ -773,7 +763,7 @@
             }
           ]
         },
-        //Blockquote
+
         {
           "Name": "Blockquote",
           "Settings": {},
@@ -791,7 +781,7 @@
             }
           ]
         },
-        //Image
+
         {
           "Name": "Image",
           "Settings": {
@@ -829,7 +819,7 @@
             }
           ]
         },
-        //Paragraph
+  
         {
           "Name": "Paragraph",
           "Settings": {},
@@ -849,11 +839,10 @@
         }
       ]
     },
-    //Content
+
     {
       "name": "Content",
       "data": [
-        //Menu
         {
           "ContentItemId": "[js:uuid()]",
           "ContentType": "Menu",
@@ -928,7 +917,7 @@
             "Alias": "main-menu"
           }
         },
-        //LandingPage
+
         {
           "ContentItemId": "[js: variables('landingContentItemId')]",
           "ContentType": "LandingPage",
@@ -1283,7 +1272,7 @@
         }
       ]
     },
-    //layers
+
     {
       "name": "layers",
       "Layers": [
@@ -1299,7 +1288,7 @@
         }
       ]
     },
-    //media
+
     {
       "name": "media",
       "Files": [
@@ -1309,7 +1298,7 @@
         }
       ]
     },
-    //Templates
+
     {
       "name": "Templates",
       "Templates": {
@@ -1350,10 +1339,6 @@
           "executionid": "TheResumeTheme",
           "name": "GuangZheng.WorkflowUserLogin"
         },
-        //{
-        //  "executionid": "TheResumeTheme",
-        //  "name": "GuangZheng.WorkflowContactAndSubscription"
-        //},
        
         {
           "executionid": "TheResumeTheme",
