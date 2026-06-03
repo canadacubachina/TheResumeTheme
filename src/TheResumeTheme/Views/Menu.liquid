@@ -1,7 +1,13 @@
-<div class="collapse navbar-collapse" id="navbarResponsive">
+@{
+    // Generate a unique ID for the menu collapse container
+    var menuCollapseId = $"menu-collapse-{Guid.NewGuid()}";
+}
+
+<div class="collapse navbar-collapse" id="@menuCollapseId">
     <ul class="navbar-nav ms-auto py-4 py-lg-0">
         {% for item in Model.Items %}
-        {{ item | shape_render }}
+            {{ item | shape_render }}
         {% endfor %}
     </ul>
 </div>
+
