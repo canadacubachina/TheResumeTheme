@@ -1,7 +1,4 @@
-@{
-    // Generate a unique ID for the navbar collapse to avoid conflicts across pages
-    var navCollapseId = $"nav-collapse-{Guid.NewGuid()}";
-}
+{% assign navCollapseId = "nav-collapse-" | append: newid %}
 
 <!DOCTYPE html>
 <html lang="{{ Culture.Name }}">
@@ -33,7 +30,6 @@
 
 <body id="page-top">
 
-    <!-- Accessible Navigation Landmark -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" role="navigation">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">{{ Site.SiteName }}</span>
@@ -42,19 +38,17 @@
             </span>
         </a>
 
-        <!-- Accessible Toggle Button -->
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#@navCollapseId"
-                aria-controls="@navCollapseId"
+                data-bs-target="#{{ navCollapseId }}"
+                aria-controls="{{ navCollapseId }}"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
 
-        <!-- Unique collapse container -->
-        <div class="collapse navbar-collapse" id="@navCollapseId">
+        <div class="collapse navbar-collapse" id="{{ navCollapseId }}">
             {% shape "menu",
                 alias:"alias:main-menu",
                 cache_id:"main-menu",
@@ -63,14 +57,12 @@
         </div>
     </nav>
 
-    <!-- Main Landmark (AODA/WCAG required) -->
     <main id="main-content" tabindex="-1">
         <div class="container-fluid p-0">
             {% render_body %}
         </div>
     </main>
 
-    <!-- Footer Landmark -->
     <footer role="contentinfo">
         {% render_section "Footer", required:false %}
     </footer>
