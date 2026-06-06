@@ -14,61 +14,62 @@
   },
 
   "steps": [
+     {
+      "name": "recipes",
+      "Values": [
+        {
+          "executionid": "OrchardCore.Commerce",
+          "name": "Blank"
+        },
+        {
+          "executionid": "OrchardCore.Commerce",
+          "name": "GuangZheng.EnableBasicFeatures"
+        },
+        {
+          "executionid": "OrchardCore.Commerce",
+          "name": "GuangZheng.Localization"
+        },
+        {
+          "executionid": "OrchardCore.Commerce",
+          "name": "GuangZheng.Distribution"
+        },
+         {
+          "executionid": "OrchardCore.Commerce",
+          "name": "GuangZheng.Communication"
+        },
+          {
+          "executionid": "OrchardCore.Commerce",
+          "name": "GuangZheng.Audit"
+        },
+        
+        {
+          "executionid": "TheResumeTheme",
+          "name": "GuangZheng.Settings"
+        },
+        // {
+        //   "executionid": "TheResumeTheme",
+        //   "name": "GuangZheng.Roles"
+        // },
+        {
+          "executionid": "TheResumeTheme",
+          "name": "GuangZheng.WorkflowUserLogin"
+        },
+       
+        {
+          "executionid": "TheResumeTheme",
+          "name": "GuangZheng.PlacementsBackend"
+        },
+        {
+          "executionid": "TheResumeTheme",
+          "name": "GuangZheng.Auth"
+        }
+
+      ]
+    },
     {
       "name": "feature",
       "enable": [
-        "OrchardCore.HomeRoute",
-        "OrchardCore.Admin",
-        "OrchardCore.Diagnostics",
-        "OrchardCore.DynamicCache",
-        "OrchardCore.Features",
-        "OrchardCore.Navigation",
-        "OrchardCore.Recipes",
-        "OrchardCore.Resources",
-        "OrchardCore.Roles",
-        "OrchardCore.Settings",
-        "OrchardCore.Themes",
-        "OrchardCore.Users",
-
-        "OrchardCore.Alias",
-        "OrchardCore.Autoroute",
-        "OrchardCore.Body",
-        "OrchardCore.ContentFields",
-        "OrchardCore.ContentPreview",
-        "OrchardCore.Contents",
-        "OrchardCore.ContentTypes",
-        "OrchardCore.CustomSettings",
-        "OrchardCore.Deployment",
-        "OrchardCore.Deployment.Remote",
-        "OrchardCore.Feeds",
-        "OrchardCore.Flows",
-        "OrchardCore.Html",
-        "OrchardCore.Indexing",
-        "OrchardCore.Layers",
-        "OrchardCore.Lucene",
-        "OrchardCore.Lists",
-        "OrchardCore.Liquid",
-        "OrchardCore.Media",
-        "OrchardCore.Menu",
-        "OrchardCore.Queries",
-        "OrchardCore.Title",
-        "OrchardCore.Templates",
-        "OrchardCore.Widgets",
-
-        "OrchardCore.Redis",
-        "OrchardCore.Redis.Cache",
-        "OrchardCore.Redis.Lock",
-
-        "OrchardCore.Email.Azure",
-        "OrchardCore.Notifications.Email",
-        "OrchardCore.Users.2FA.Email",
-        "OrchardCore.Seo",
-        "OrchardCore.AuditTrail",
-        "OrchardCore.HealthChecks",
-      
-        "TheResumeTheme",
-        "TheAdmin",
-        "SafeMode"
+        "TheResumeTheme"
       ]
     },
     
@@ -1323,33 +1324,6 @@
           "Description": null
         }
       }
-    },
-    {
-      "name": "recipes",
-      "Values": [
-        {
-          "executionid": "TheResumeTheme",
-          "name": "GuangZheng.Settings"
-        },
-        {
-          "executionid": "TheResumeTheme",
-          "name": "GuangZheng.Roles"
-        },
-        {
-          "executionid": "TheResumeTheme",
-          "name": "GuangZheng.WorkflowUserLogin"
-        },
-       
-        {
-          "executionid": "TheResumeTheme",
-          "name": "GuangZheng.PlacementsBackend"
-        },
-        {
-          "executionid": "TheResumeTheme",
-          "name": "GuangZheng.Auth"
-        }
-
-      ]
-    } 
+    }
   ]
 }
