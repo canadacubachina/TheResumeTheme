@@ -29,10 +29,10 @@
           "executionid": "OrchardCore.Commerce",
           "name": "GuangZheng.Localization"
         },
-        {
-          "executionid": "OrchardCore.Commerce",
-          "name": "GuangZheng.Distribution"
-        },
+        //{
+        //  "executionid": "OrchardCore.Commerce",
+        //  "name": "GuangZheng.Distribution"
+        //},
          {
           "executionid": "OrchardCore.Commerce",
           "name": "GuangZheng.Communication"
@@ -46,14 +46,14 @@
           "executionid": "TheResumeTheme",
           "name": "GuangZheng.Settings"
         },
-        // {
-        //   "executionid": "TheResumeTheme",
-        //   "name": "GuangZheng.Roles"
-        // },
-        //{
-        //  "executionid": "TheResumeTheme",
-        //  "name": "GuangZheng.WorkflowUserLogin"
-        //},
+         {
+           "executionid": "TheResumeTheme",
+           "name": "GuangZheng.Roles"
+         },
+        {
+          "executionid": "TheResumeTheme",
+          "name": "GuangZheng.WorkflowUserLogin"
+        },
        
         {
           "executionid": "TheResumeTheme",
